@@ -28,7 +28,7 @@ aside p {
 }
 
 aside footer p {
-  margin-top: 1.8rem;
+  margin-top: .8rem;
 }
 
 #mapid {
@@ -38,6 +38,8 @@ aside footer p {
 
 /* BUTTON */
 a.create-orphanage {
+  z-index: 1000;
+
   position: absolute;
   right: 4rem;
   bottom: 4rem;
