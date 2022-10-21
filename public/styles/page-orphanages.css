@@ -34,11 +34,14 @@ aside footer p {
 #mapid {
   width: 100%;
   height: 100%;
+
+  
+  animation-delay: 200ms;
 }
 
 /* BUTTON */
 a.create-orphanage {
-  z-index: 1000;
+  z-index: 10;
 
   position: absolute;
   right: 4rem;
@@ -59,4 +62,46 @@ a.create-orphanage {
 
 a.create-orphanage:hover {
   background: #17D6EB;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+}
+
+div.leaflet-popup-content {
+  color: #0089A5;
+  margin: 0.8rem 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.leaflet-popup-content a {
+  width: 4rem;
+  height: 4rem;
+
+  background: #15C3D6;
+  box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16); 
+  border-radius: 1.2rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background .2s;
+}
+
+div.leaflet-popup-content a:hover {
+  background: #17D6EB;
+}
+
+.leaflet-popup-tip {
+  display: none;
+}
+
+#mapid.leaflet-container {
+  font: 700 2rem/1 'Nunito', sans-serif;
+  z-index: 5;
 }
