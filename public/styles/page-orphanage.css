@@ -39,7 +39,7 @@ aside.sidebar footer button:hover {
 }
 
 main {
-  flex: 1;
+  margin-inline: auto;
 }
 
 /* DETAILS */
